@@ -14,7 +14,6 @@ public class Estabelecimento {
         cozinheiro.adicionarComboNoBalcao();
 
         Atendente atendente = new Atendente();
-        atendente.pegarLancheCozinha();
         atendente.receberPagamento();
         atendente.servindoMesas();
 
