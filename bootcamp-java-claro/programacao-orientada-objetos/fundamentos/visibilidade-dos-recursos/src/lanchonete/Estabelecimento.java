@@ -8,14 +8,6 @@ import lanchonete.atendimento.cozinha.Cozinheiro;
 public class Estabelecimento {
     public static void main(String[] args) {
         Cozinheiro cozinheiro = new Cozinheiro();
-        //açoes que não precisam estarem disponíveis para toda a aplicação
-        cozinheiro.lavarIngredientes();
-        cozinheiro.baterVitaminaLiquidificador();
-        cozinheiro.selecionarIngredientesVitamina();
-        cozinheiro.prepararLanche();
-        cozinheiro.prepararVitamina();
-        cozinheiro.prepararVitamina();
-
         //ações que estabelecimento precisa ter ciência
         cozinheiro.adicionarSucoNoBalcao();
         cozinheiro.adicionarLancheNoBalcao();
@@ -43,9 +35,6 @@ public class Estabelecimento {
         //esta ação é muito sigilosa, qual tal ser privada?
         cliente.consultarSaldoAplicativo();
 
-        //já pensou os clientes ouvindo que o gás acabou?
-        cozinheiro.pedirParaTrocarGas(atendente);
-        cozinheiro.pedirParaTrocarGas(almoxarife);
     }
 }
 
