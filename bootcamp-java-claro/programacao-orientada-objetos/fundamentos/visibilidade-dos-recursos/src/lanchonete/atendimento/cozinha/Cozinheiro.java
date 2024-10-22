@@ -44,6 +44,7 @@ public class Cozinheiro {
     }
     private void pedirParaTrocarGas(Almoxarife meuAmigo) {
         meuAmigo.trocarGas();
+
     }
     private void pedirIngredientes(Almoxarife almoxarife) {
         almoxarife.entregarIngredientes();

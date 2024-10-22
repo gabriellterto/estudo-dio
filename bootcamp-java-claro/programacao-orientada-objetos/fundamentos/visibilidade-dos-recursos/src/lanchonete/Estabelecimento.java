@@ -13,11 +13,6 @@ public class Estabelecimento {
         cozinheiro.adicionarLancheNoBalcao();
         cozinheiro.adicionarComboNoBalcao();
 
-        Almoxarife almoxarife = new Almoxarife();
-        //ações que não precisam estarem disponíveis para toda a aplicação
-        almoxarife.controlarEntrada();
-        almoxarife.controlarSaida();
-
         Atendente atendente = new Atendente();
         atendente.pegarLancheCozinha();
         atendente.receberPagamento();
