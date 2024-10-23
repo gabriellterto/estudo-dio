@@ -2,21 +2,23 @@ package mensagem;
 
 public class ComputadorPedrinho {
     public static void main(String[] args) {
-        System.out.println("MSN");
-        MsnMessenger msn = new MsnMessenger();
-        msn.enviarMensagem();
-        msn.receberMensagem();
-        System.out.println("");
+        ServicoMensagemInstantanea smi = null;
 
-        System.out.println("FACEBOOK");
-        FacebookMessenger fb = new FacebookMessenger();
-        fb.enviarMensagem();
-        fb.receberMensagem();
-        System.out.println("");
+        /*
+        * Não se sabe qual app
+        * Mas qualquer um deverá enviar e receber mensagem
+        * */
+        String appEscolhido = "msn";
 
-        System.out.println("TELEGRAM");
-        Telegram telegram = new Telegram();
-        telegram.enviarMensagem();
-        telegram.receberMensagem();
+        if(appEscolhido.equals("msn")) {
+            smi = new MsnMessenger();
+        } else if(appEscolhido.equals("fb")) {
+            smi = new FacebookMessenger();
+        } else if(appEscolhido.equals("telegram")) {
+            smi = new Telegram();
+        }
+
+        smi.enviarMensagem();
+        smi.receberMensagem();
     }
 }
