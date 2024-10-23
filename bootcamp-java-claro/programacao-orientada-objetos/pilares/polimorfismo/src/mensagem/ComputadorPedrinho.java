@@ -1,5 +1,10 @@
 package mensagem;
 
+import app.FacebookMessenger;
+import app.MsnMessenger;
+import app.ServicoMensagemInstantanea;
+import app.Telegram;
+
 public class ComputadorPedrinho {
     public static void main(String[] args) {
         ServicoMensagemInstantanea smi = null;
