@@ -1,6 +1,6 @@
 package exemplo;
 
-public class Carro {
+public class Carro extends Veiculo{
     public void ligar() {
         confereCombustivel();
         confereCambio();
