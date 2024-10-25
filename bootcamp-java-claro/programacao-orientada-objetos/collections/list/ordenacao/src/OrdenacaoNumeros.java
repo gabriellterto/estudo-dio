@@ -12,11 +12,11 @@ public class OrdenacaoNumeros{
         this.numerosList.add(numero);
     }
 
-   public List<Integer> ordenarAscedente() {
-        List<Integer> numerosAscendete = new ArrayList(this.numerosList);
+   public List<Integer> ordenarAscendente() {
+        List<Integer> numerosAscendente = new ArrayList(this.numerosList);
         if(!this.numerosList.isEmpty()) {
-            Collections.sort(numerosAscendete);
-            return numerosAscendete;
+            Collections.sort(numerosAscendente);
+            return numerosAscendente;
         } else {
             throw  new RuntimeException("A lista está vazia");
         }
@@ -39,6 +39,20 @@ public class OrdenacaoNumeros{
             System.out.println("A lista está vazia!");
         }
    }
+
+    public static void main(String[] args) {
+        OrdenacaoNumeros numeros = new OrdenacaoNumeros();
+        numeros.adicionarNumero(2);
+        numeros.adicionarNumero(5);
+        numeros.adicionarNumero(4);
+        numeros.adicionarNumero(1);
+        numeros.adicionarNumero(99);
+        numeros.exibirNumeros();
+        System.out.println(numeros.ordenarAscendente());
+        numeros.exibirNumeros();
+        System.out.println(numeros.ordenarDescendente());
+        numeros.exibirNumeros();
+    }
 }
 
 
